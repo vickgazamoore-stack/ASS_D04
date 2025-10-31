@@ -11,7 +11,7 @@ function fetchUsersAndSummarize() {
     })
     .then(function (users) {
       console.log("Total users fetched:", users.length);
-      console.log("--- All Users (ID, Name, Company, City) ---");
+      console.log("All Users (ID, Name, Company, City)");
 
       users.forEach(function (user) {
         console.log(
@@ -70,7 +70,7 @@ function testError() {
     .catch(function (error) {
       // Display error message
       console.error("Test Error Handling Works:", error.message);
-      console.log("*********************************");
+      console.log("Error test.");
     });
 }
 
